@@ -8,4 +8,11 @@ with open("london-to-seattle-miles.txt", "r") as f:
 
 collection.add(documents=[text], ids=["londonToSeattle"])
 
-print("Embedding stored in Chroma")
+print("Embedding 'London to Seattle' stored in Chroma")
+
+with open("k8s.txt", "r") as f:
+    text = f.read()
+
+collection.add(documents=[text], ids=["k8s"])
+
+print("Embedding 'k8s' stored in Chroma")
